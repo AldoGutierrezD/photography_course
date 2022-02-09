@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="input.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="src/img/favicon.png">
+    <title>Photography Course</title>
+</head>
+<body class="w-full h-full p-4 bg-lake bg-cover">
+    <header class="w-full flex justify-between">
+        <h1 class="w-full text-center text-4xl mt-0.5 font-noedisplay text-white lg:w-0.5 lg:mr-10">SC</h1>
+        <div class="flex hidden w-7/12 max-h-12 rounded-md bg-white bg-opacity-10 backdrop-blur-sm focus-within:shadow-lg lg:block lg:flex">
+            <i class='bx bx-search w-8 text-white opacity-10 text-2xl p-3 mr-4'></i>
+            <input class="w-11/12 h-12 p-4 font-gilroylight text-white bg-transparent focus:outline-none focus:shadow-lg" type="text" placeholder="Search for courses">
+        </div>
+        <div class="w-4/12 hidden lg:block">
+            <ul class="flex justify-between mt-0.5 text-white">
+                <a href="" class="p-2 font-gilroylight hover:text-gray-300">
+                    <li>All courses</li>
+                </a>
+                <a href="" class="p-2 font-gilroylight hover:text-gray-300">
+                    <li>Reviews</li>
+                </a>
+                <a href="" class="p-2 font-gilroylight hover:text-gray-300">
+                    <li>About us</li>
+                </a>
+                <a href="" class="p-2 font-gilroylight hover:text-gray-300">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="flex flex-col justify-between mt-8 lg:flex-row">
+        <section class="w-full flex flex-row justify-between items-center lg:flex-col lg:w-10">
+            <div class="w-48 h-0.5 bg-white bg-opacity-50 lg:w-0.5 lg:h-48"></div>
+            <i class='bx bx-menu text-3xl text-white'></i>
+            <div class="w-48 h-0.5 bg-white bg-opacity-50 lg:w-0.5 lg:h-48"></div>
+            <div class="flex hidden lg:block lg:flex">
+                <h3 class="font-noedisplay text-white">01/</h3>
+                <h3 class="font-noedisplay text-white mt-2 text-gray-400">03</h3>
+            </div>
+        </section>
+        <section class="w-full mt-8 ml-8 text-white lg:w-7/12">
+            <h2 class="font-gilroylight">10TH OCTOBER - 1TH NOVEMBER</h2>
+            <h1 class="w-11/12 font-noedisplay text-6xl my-2 lg:w-10/12 lg:text-6xl">Autumn Landscapes New Photography Course</h1>
+            <h3 class="w-10/12 text-sm font-gilroylight tracking-tight my-2 lg:w-7/12 lg:text-base">New course which was made especially for this amazing period. The most beautifull pictures como frome here!</h3>
+            <div class="flex">
+                <button class="bg-white p-3 text-black rounded-2xl w-36 text-sm font-bold flex justify-center items-center mr-4 hover:bg-opacity-20 hover:backdrop-blur-sm hover:text-white lg:w-44 lg:p-3 lg:rounded-3xl"><i class='bx bx-calendar-alt text-gray-500 text-lg m-1 lg:mr-4'></i>Choose Date</button>
+                <button class="bg-white p-3 text-white rounded-2xl w-52 text-sm font-bold flex justify-center items-center bg-opacity-20 backdrop-blur-sm hover:bg-opacity-100 hover:backdrop-blur-none hover:text-black lg:w-56 lg:p-3 lg:rounded-3xl"><i class='bx bx-image-alt text-gray-500 text-xl m-1 lg:mr-4'></i>View Student's Works</button>
+            </div>
+        </section>
+        <section class="w-full flex flex-row justify-center items-center lg:w-4/12 lg:flex-col" id="main">
+            <course class="w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=02 end=03 title="Portrait Course" date="14th October -" dateend="3th November"></course>
+            <course class="w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=03 end=03 title="Aero Photo" date="28th October -" dateend="12th November"></course>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
