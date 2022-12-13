@@ -10,7 +10,7 @@
     <link rel="icon" href="src/img/favicon.png">
     <title>Photography Course</title>
 </head>
-<body class="w-full h-full p-4 bg-lake bg-cover">
+<body class="w-full h-screen p-4 bg-lake bg-contain">
     <header class="w-full flex justify-between">
         <h1 class="w-full text-center text-4xl mt-0.5 font-noedisplay text-white lg:w-0.5 lg:mr-10">SC</h1>
         <div class="flex hidden w-7/12 max-h-12 rounded-md bg-white bg-opacity-10 backdrop-blur-sm focus-within:shadow-lg lg:block lg:flex">
@@ -45,18 +45,18 @@
                 <h3 class="font-noedisplay text-white mt-2 text-gray-400">03</h3>
             </div>
         </section>
-        <section class="w-full mt-8 ml-8 text-white lg:w-7/12">
+        <section class="w-full lg:mt-8 lg:ml-8 text-white lg:w-7/12">
             <h2 class="font-gilroylight">10TH OCTOBER - 1TH NOVEMBER</h2>
             <h1 class="w-11/12 font-noedisplay text-6xl my-2 lg:w-10/12 lg:text-6xl">Autumn Landscapes New Photography Course</h1>
             <h3 class="w-10/12 text-sm font-gilroylight tracking-tight my-2 lg:w-7/12 lg:text-base">New course which was made especially for this amazing period. The most beautifull pictures como frome here!</h3>
-            <div class="flex">
-                <button class="bg-white p-3 text-black rounded-2xl w-36 text-sm font-bold flex justify-center items-center mr-4 hover:bg-opacity-20 hover:backdrop-blur-sm hover:text-white lg:w-44 lg:p-3 lg:rounded-3xl"><i class='bx bx-calendar-alt text-gray-500 text-lg m-1 lg:mr-4'></i>Choose Date</button>
-                <button class="bg-white p-3 text-white rounded-2xl w-52 text-sm font-bold flex justify-center items-center bg-opacity-20 backdrop-blur-sm hover:bg-opacity-100 hover:backdrop-blur-none hover:text-black lg:w-56 lg:p-3 lg:rounded-3xl"><i class='bx bx-image-alt text-gray-500 text-xl m-1 lg:mr-4'></i>View Student's Works</button>
+            <div class="flex flex-col md:flex-row md:justify-center md:items-center">
+                <button class="bg-white p-3 text-black rounded-2xl w-full md:w-3/12 text-sm font-bold flex justify-center items-center mr-4 hover:bg-opacity-20 hover:backdrop-blur-sm hover:text-white lg:w-44 lg:p-3 lg:rounded-3xl mb-2 lg:mb-0"><i class='bx bx-calendar-alt text-gray-500 text-lg m-1 lg:mr-4'></i>Choose Date</button>
+                <button class="bg-white p-3 text-white rounded-2xl w-full md:w-3/12 text-sm font-bold flex justify-center items-center bg-opacity-20 backdrop-blur-sm hover:bg-opacity-100 hover:backdrop-blur-none hover:text-black lg:w-56 lg:p-3 lg:rounded-3xl"><i class='bx bx-image-alt text-gray-500 text-xl m-1 lg:mr-4'></i>View Student's Works</button>
             </div>
         </section>
-        <section class="w-full flex flex-row justify-center items-center lg:w-4/12 lg:flex-col" id="main">
-            <course class="w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=02 end=03 title="Portrait Course" date="14th October -" dateend="3th November"></course>
-            <course class="w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=03 end=03 title="Aero Photo" date="28th October -" dateend="12th November"></course>
+        <section class="w-full flex justify-center items-center lg:w-4/12 flex-col md:flex-row" id="main">
+            <course class="w-full md:w-5/12 md:mx-6 lg:w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 mt-4 lg:m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=02 end=03 title="Portrait Course" date="14th October -" dateend="3th November"></course>
+            <course class="w-full md:w-5/12 md:mx-6 lg:w-44 h-48 bg-white bg-opacity-20 rounded-lg text-white p-6 mt-4 lg:m-4 backdrop-blur-sm shadow-lg cursor-pointer hover:backdrop-blur-xl" start=03 end=03 title="Aero Photo" date="28th October -" dateend="12th November"></course>
         </section>
     </div>
 

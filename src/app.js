@@ -1,7 +1,7 @@
 Vue.component("course",{
     props: {
-        start: Number,
-        end: Number,
+        start: String,
+        end: String,
         title: String,
         date: String,
         dateend: String,
@@ -12,9 +12,9 @@ Vue.component("course",{
                 <h3 class="font-noedisplay text-sm">{{start}}/</h3>
                 <h3 class="font-noedisplay text-sm mt-2 text-gray-400">{{end}}</h3>
             </div>
-            <h2 class="font-noedisplay text-2xl mt-4">{{title}}</h2>
-            <h3 class="font-gilroylight text-sm">{{date}}</h3>
-            <h3 class="font-gilroylight text-sm">{{dateend}}</h3>
+            <h2 class="font-noedisplay text-4xl lg:text-2xl mt-4">{{title}}</h2>
+            <h3 class="font-gilroylight text-lg lg:text-sm">{{date}}</h3>
+            <h3 class="font-gilroylight text-lg lg:text-sm">{{dateend}}</h3>
         </div>
     `,
 });
